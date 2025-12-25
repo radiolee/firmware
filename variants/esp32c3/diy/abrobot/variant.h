@@ -1,0 +1,35 @@
+#define BUTTON_PIN (9)
+
+#define HAS_NEOPIXEL
+#define NEOPIXEL_COUNT 1
+#define NEOPIXEL_DATA 8
+#define NEOPIXEL_TYPE (NEO_GRB + NEO_KHZ800)
+
+#define HAS_GPS 0
+#undef GPS_RX_PIN
+#undef GPS_TX_PIN
+
+#define I2C_SDA (21)
+#define I2C_SCL (20)
+#define HAS_SCREEN 1
+#define USE_SSD1306
+
+#define USE_SX1268
+#define LORA_DIO0 RADIOLIB_NC
+#define LORA_RESET (1)
+#define LORA_DIO1 (0)
+#define LORA_RXEN (10)
+#define LORA_BUSY (7)
+#define LORA_MISO (6)
+#define LORA_MOSI (5)
+#define LORA_CS (4)
+#define LORA_SCK (3)
+
+#define SX126X_CS LORA_CS
+#define SX126X_DIO1 LORA_DIO1
+#define SX126X_BUSY LORA_BUSY
+#define SX126X_RESET LORA_RESET
+#define SX126X_RXEN LORA_RXEN
+#define SX126X_TXEN RADIOLIB_NC
+#define SX126X_DIO2_AS_RF_SWITCH
+#define SX126X_MAX_POWER 22
